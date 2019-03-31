@@ -41,8 +41,8 @@ _release: _setup-versions ;$(call  _git_push,Releasing $(NEXT_VERSION)) ;$(info 
 	@$(MAKE) _docker-build _docker-push
 
 _new-repo:
-#	@hub init
-#	@hub create docker-$(NAME)
+	@hub init
+	@hub create docker-$(NAME)
 	@hub add Makefile
 	@hub commit -m "Initial"
 	@hub push --set-upstream origin master
@@ -53,5 +53,5 @@ _initial-release: _new-repo
 define _git_push
 	-git add .
 	-git commit -m "$1"
-	-git push
+#	-git push
 endef
