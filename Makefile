@@ -38,7 +38,8 @@ _docker-push: _setup-versions
 
 _release: _setup-versions ;$(call  _git_push,Releasing $(NEXT_VERSION)) ;$(info $(M) Releasing version $(NEXT_VERSION)...)## Release by adding a new tag. RELEASE_TYPE is 'patch' by default, and can be set to 'minor' or 'major'.
 	@github-release release -u marcelocorreia -r $(GIT_REPO_NAME) --tag $(NEXT_VERSION) --name $(NEXT_VERSION)
-	@$(MAKE) _docker-build _docker-push
+	@$(MAKE) _docker-build
+#	_docker-push
 
 _new-repo:
 	@hub init
@@ -53,5 +54,5 @@ _initial-release: _new-repo
 define _git_push
 	-git add .
 	-git commit -m "$1"
-#	-git push
+	-git push
 endef
