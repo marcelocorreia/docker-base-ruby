@@ -1,4 +1,0 @@
-FROM marcelocorreia/base-jessie-slim
-
-MAINTAINER marcelo correia <marcelo@correia.io>
-
