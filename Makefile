@@ -43,9 +43,10 @@ _initial-release:
 	github-release release -u marcelocorreia -r $(GIT_REPO_NAME) --tag 0.0.0 --name 0.0.0
 
 _git-push: _setup-versions
-	$(call  git_push,Releasing $(VERSION))
+
 _readme:
 	$(SCAFOLD) generate --resource-type readme .
+	$(call  git_push,Updating docs)
 
 define git_push
 	-git add .
