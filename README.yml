@@ -45,6 +45,7 @@ usage: |
   ```
 
 shields:
+  - https://img.shields.io/github/release/{{ .github_user }}/{{ .git_repo }}.svg?flat-square
   - https://img.shields.io/docker/pulls/{{.name}}.svg
   - https://img.shields.io/github/languages/top/{{ .github_user }}/{{ .git_repo }}.svg
 tldr:

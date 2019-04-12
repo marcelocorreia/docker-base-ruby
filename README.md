@@ -2,6 +2,7 @@
 # Docker marcelocorreia/base-ruby
 
 ---
+[![shield](https://img.shields.io/github/release/marcelocorreia/docker-base-ruby.svg?flat-square)](https://img.shields.io/github/release/marcelocorreia/docker-base-ruby.svg?flat-square)
 [![shield](https://img.shields.io/docker/pulls/marcelocorreia/base-ruby.svg)](https://img.shields.io/docker/pulls/marcelocorreia/base-ruby.svg)
 [![shield](https://img.shields.io/github/languages/top/marcelocorreia/docker-base-ruby.svg)](https://img.shields.io/github/languages/top/marcelocorreia/docker-base-ruby.svg)
 ---
